@@ -1,0 +1,18 @@
+fx_rgb: 462.1379699707031
+fy_rgb: 462.1379699707031
+cx_rgb: 320.0
+cy_rgb: 240.0
+
+fx_depth: 695.99511
+fy_depth: 695.99511
+cx_depth: 640.0
+cy_depth: 360.0
+
+detection_confidence: 0.9 # Accepted detection confidence from the DL model
+sampling_t: 0.1           # Sampling time for computing keypoints
+maximum_depth: 10000.0    # Maximum Depth in mm
+below_cam_th: 0.3         # Maximum distance along the camera's y axis a 3D point can have
+inclination_th: 10        # Inlcination threshold for discarding misdetected trees with too much inclination (degrees)
+
+rgb_topic: "/camera/color/image_raw/compressed"
+depth_topic: "/camera/depth/image_raw"
